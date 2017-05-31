@@ -1,0 +1,11 @@
+.wrapper {
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}

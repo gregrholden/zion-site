@@ -1,0 +1,29 @@
+.site-header {
+  position: fixed;
+  width: 100%;
+  background-color: $mainBlue;
+  padding: 10px 0;
+
+  &__logo {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    transform: translateX(-50%) scale (1.6);
+    transition: transform .3s ease-out;
+    transform-origin: 50% 0;
+    background-color: $darkBlue;
+    padding: 56px 36px;
+    font-size: 1.4rem;
+
+    a {
+      padding: 48px;
+      text-decoration: none;
+      color: #FFF;
+    }
+
+  }
+
+  &__btn-container {
+      float: left;
+  }
+}

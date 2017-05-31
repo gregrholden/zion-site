@@ -1,0 +1,34 @@
+.primary-nav {
+  padding-top: 10px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 18px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 300;
+    padding: 12px 0;
+    background-color: rgba($mainBlue, .6);
+  }
+
+  li:last-child {
+    padding-left: 0;
+  }
+
+  li:first-child {
+    margin-left: 25px;
+  }
+
+  &--pull-left {
+    float: left;
+  }
+}
