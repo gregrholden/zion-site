@@ -11,14 +11,17 @@ gulp.task('watch', function() {
     }
   });
 
+  // Watch for changes to index.html
   watch('./app/index.html', function() {
     browserSync.reload();
   });
 
+  // Watch for changes to CSS fles
   watch('./app/assets/styles/**/*.css', function() {
     gulp.start('cssInject');
   });
 
+  // Watch for changes to JavaScript files
   watch('./app/assets/scripts/**/*.js', function() {
     gulp.start('scriptsRefresh');
   })

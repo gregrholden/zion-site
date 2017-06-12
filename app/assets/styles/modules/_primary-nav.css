@@ -1,7 +1,9 @@
+/*BEM methodology largely ignored in nav bar*/
 .primary-nav {
   padding-top: 10px;
 
   ul {
+    /*remove default margin & padding*/
     margin: 0;
     padding: 0;
   }
@@ -9,15 +11,14 @@
   li {
     list-style: none;
     display: inline-block;
-    padding-right: 18px;
+    padding-right: 20px;
   }
 
   a {
     text-decoration: none;
     color: #FFF;
-    font-weight: 300;
+    font-weight: 400;
     padding: 12px 0;
-    background-color: rgba($mainBlue, .6);
   }
 
   li:last-child {

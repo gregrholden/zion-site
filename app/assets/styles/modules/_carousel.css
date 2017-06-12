@@ -1,0 +1,43 @@
+.carousel {
+  margin: 0;
+  padding: 0;
+  top: 0;
+
+  &__headline {
+    position: absolute;
+    width: 45%;
+    margin: auto;
+    background-color: rgba($lightBlue, .85);
+    font-size: 1.2rem;
+    z-index: 5;
+    text-align: center;
+    color: #FFF;
+    padding: 55px;
+    transform: translateX(50%) translateY(55%);
+  }
+
+  &__frame {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    height: 625px;
+    overflow: hidden;
+  }
+
+  &__slide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 1.5s ease-out;
+  }
+
+  &__slide--showing {
+    opacity: 1;
+    z-index: 2;
+  }
+}
